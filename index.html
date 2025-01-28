@@ -20,32 +20,35 @@
   <body>
     <header>
       <nav>
-        <a class="logo">SN</a>
+        <a class="logo" href="#">SN</a>
         <ul class="nav-links">
-          <li class="nav-link"><a href="#">Home</a></li>
-          <li class="nav-link"><a href="#">About</a></li>
+          <li class="nav-link"><a href="#HOME">Home</a></li>
+          <li class="nav-link"><a href="#ABOUT">About</a></li>
           <li class="nav-link">
-            <a href="#">Education &amp; Experience</a>
+            <a href="#RESUME">Education &amp; Experience</a>
           </li>
-          <li class="nav-link"><a href="#">Skills</a></li>
-          <li class="nav-link"><a href="#">Contact</a></li>
+          <li class="nav-link"><a href="#SKILLS">Skills</a></li>
+          <li class="nav-link"><a href="#CONTACT">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero-section" id="HOME">
         <article class="hero-section container">
           <div class="hero-text">
             <div class="top-text">
               <h1>Hello there,</h1>
-              <h2>Sipho Nkebe here</h2>
-              <button type="button" class="cv-btn">
-                CV <i class="fa-solid fa-file-arrow-down"></i>
-              </button>
+              <h3>Sipho Nkebe here</h2>
+              <div class="social">
+                <a href="#"><i class="fa-solid fa-linkedin"></i></a>
+                <a href="#"><i class="fa-solid fa-github"></i></a>
+              </div>
             </div>
             <div class="bottom-text">
               <p>Aspiring web developer</p>
-              <!-- <p>Explore</p> -->
+              <button type="button" class="cv-btn">
+                Download CV <i class="fa-solid fa-file-arrow-down"></i>
+              </button>
             </div>
           </div>
 
@@ -54,9 +57,12 @@
           </div>
         </article>
       </section>
-      <section class="about-section">
+      <section class="about-section" id="ABOUT">
         <h2>About Me</h2>
         <article class="personal-info">
+          <div class="illustration-container">
+            <img src="#" alt="illustration" />
+          </div>
           <p>
             My name is Sipho Nkebe, I am a web developer. I have a passion for
             creating and learning new things. My journey began in 2021 when I
@@ -103,14 +109,82 @@
           </div>
         </article>
       </section>
-      <section class="skills">
-        <article class="technical-skills"></article>
-        <article class="technical-tools"></article>
-        <article class="personal-skills"></article>
+      <section class="skills" id="SKILLS">
+        <article class="technical-skills">
+          <h2>Technical skills</h2>
+          <div class="technical-skills-container">
+            <div class="technical-skill">
+              <img src="#" alt="skill image">
+            </div>
+            <div class="technical-skill">
+              <img src="#" alt="skill image">
+            </div>
+            <div class="technical-skill">
+              <img src="#" alt="skill image">
+            </div>
+            <div class="technical-skill">
+              <img src="#" alt="skill image">
+            </div>
+            <div class="technical-skill">
+              <img src="#" alt="skill image">
+            </div>
+            <div class="technical-skill">
+              <img src="#" alt="skill image">
+            </div>
+            <div class="technical-skill">
+              <img src="#" alt="skill image">
+            </div>
+            <div class="technical-skill">
+              <img src="#" alt="skill image">
+            </div>
+          </div>
+        </article>
+        <article class="technical-tools">
+        
+        </article>
+        <article class="personal-skills">
+          <h2>Personal skills</h2>
+           <div class="personal-skills-container">
+            <div class="personal-skill">Critical thinking</div>
+           <div class="personal-skill">Analytical thinking</div>
+           <div class="personal-skill">Problem solving</div>
+           <div class="personal-skill">Creative thinking</div>
+           <div class="personal-skill">Time management</div>
+           </div>
+        </article>
       </section>
-      <section class="technical-values">
+      <section class="technical-values" id="RESUME">
         <article class="technical-projects">
+          <h2>Projects</h2>
           <div class="cards-container">
+            <div class="card">
+              <div class="card-top"></div>
+              <div class="card-bottom"></div>
+            </div>
+            <div class="card">
+              <div class="card-top"></div>
+              <div class="card-bottom"></div>
+            </div>
+            <div class="card">
+              <div class="card-top"></div>
+              <div class="card-bottom"></div>
+            </div>
+            <div class="card">
+              <div class="card-top"></div>
+              <div class="card-bottom"></div>
+            </div>
+            <div class="card">
+              <div class="card-top"></div>
+              <div class="card-bottom"></div>
+            </div>
+            <div class="card">
+              <div class="card-top"></div>
+              <div class="card-bottom"></div>
+            </div>
+            <div class="card">
+              <div class="card-top"></div>
+              <div class="card-bottom"></div>
+            </div>
             <div class="card">
               <div class="card-top"></div>
               <div class="card-bottom"></div>
@@ -121,7 +195,7 @@
       <section class="achievements">
         <article class="certifications">
           <h2>Achievements &nbsp; &nbsp;<i class="fa-brands fa-aws"></i></h2>
-          <p>Becoming AWS practitioner</p>
+          <p>Becoming AWS practitioner certificates</p>
           <div class="logos">
             <div class="logo_items">
               <img src="./images/images/aws-cert1.png" />
@@ -139,38 +213,8 @@
               <img src="./images/images/aws-cert13.png" />
               <img src="./images/images/aws-cert14.png" />
               <img src="./images/images/aws-cert15.png" />
-              <img src="./images/images/aws-cert1.png" />
-              <img src="./images/images/aws-cert2.png" />
-              <img src="./images/images/aws-cert3.png" />
-              <img src="./images/images/aws-cert4.png" />
-              <img src="./images/images/aws-cert5.png" />
-              <img src="./images/images/aws-cert6.png" />
-              <img src="./images/images/aws-cert7.png" />
-              <img src="./images/images/aws-cert8.png" />
-              <img src="./images/images/aws-cert9.png" />
-              <img src="./images/images/aws-cert10.png" />
-              <img src="./images/images/aws-cert11.png" />
-              <img src="./images/images/aws-cert12.png" />
-              <img src="./images/images/aws-cert13.png" />
-              <img src="./images/images/aws-cert14.png" />
-              <img src="./images/images/aws-cert15.png" />
             </div>
             <div class="logo_items">
-              <img src="./images/images/aws-cert1.png" />
-              <img src="./images/images/aws-cert2.png" />
-              <img src="./images/images/aws-cert3.png" />
-              <img src="./images/images/aws-cert4.png" />
-              <img src="./images/images/aws-cert5.png" />
-              <img src="./images/images/aws-cert6.png" />
-              <img src="./images/images/aws-cert7.png" />
-              <img src="./images/images/aws-cert8.png" />
-              <img src="./images/images/aws-cert9.png" />
-              <img src="./images/images/aws-cert10.png" />
-              <img src="./images/images/aws-cert11.png" />
-              <img src="./images/images/aws-cert12.png" />
-              <img src="./images/images/aws-cert13.png" />
-              <img src="./images/images/aws-cert14.png" />
-              <img src="./images/images/aws-cert15.png" />
               <img src="./images/images/aws-cert1.png" />
               <img src="./images/images/aws-cert2.png" />
               <img src="./images/images/aws-cert3.png" />
@@ -190,10 +234,36 @@
           </div>
         </article>
       </section>
-      <section class="contact-section">
+      <section class="contact-section" id="CONTACT">
+        <h2>Let's get in touch</h2>
         <article class="form-container">
-          <form action="">
-            <!-- input fields -->
+          <div class="map-container">
+            <!-- iframe -->
+          </div>
+          <form action="" method="post">
+            <div class="input-fields">
+              <input
+                type="text"
+                name="full-name"
+                id="full-name"
+                class="input-field"
+                placeholder="Full Name"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="input-field"
+                placeholder="Email"
+              />
+              <textarea
+                name="message"
+                id="message"
+                class="input-field"
+                placeholder="Leave me a message..."
+              ></textarea>
+              <button type="submit">Submit</button>
+            </div>
           </form>
         </article>
       </section>

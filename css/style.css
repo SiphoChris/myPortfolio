@@ -11,13 +11,21 @@ body {
 
 :root {
     --primary-color: #333;
-    --secondary-color: #f4f4f4;
-    --tertiary-color: #afb3ec;
+    --secondary-color: #e6e5e5;
+    --tertiary-color: #052d69;
     --accent-color: orangered;
     --light-text-color: #f4f4f4;
     --dark-text-color: #1d1d1d;
 
     --nav-height: 8rem; 
+}
+
+:is(h2) {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* nav */
@@ -36,10 +44,15 @@ nav {
 }
 
 .nav-link a {
-    text-decoration: none;
+    transition: color .25s ease-in-out;
+
+    &:hover {
+        color: var(--accent-color);
+    }
 }
 
 .logo {
+    color: var(--light-text-color);
     font-size: 1.5rem;
     font-weight: bold;
     border: 2px solid var(--light-text-color);
@@ -94,8 +107,8 @@ nav {
     & h1 {
         font-size: 4rem;
     }
-    & h2 {
-        font-size: 2rem;
+    & h3 {
+        font-size: 1.8rem;
     }
 }
 
@@ -113,7 +126,6 @@ nav {
     width: fit-content;
     border: 2px solid var(--secondary-color);
     border-radius: 12rem;
-    margin-top: 2rem;
     cursor: pointer;
     transition: all .3s ease-in-out;
     display: flex;
@@ -132,9 +144,21 @@ nav {
 /* about */
 
 .about-section {
-    min-height: 100vh;
     background-color: var(--secondary-color);
+    padding: 8rem 2rem 2rem;
+}
 
+.personal-info {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+
+    &>p {
+        width: 45ch;
+        line-height: 1.6;
+    }
 }
 
 
@@ -262,6 +286,107 @@ nav {
   }
   
 
+  /* skills */
+
+/* technical skills */
+
+.technical-skills {
+    min-height: 50vh;
+    display: grid;
+    place-content: center;
+    padding: 4rem 0;
+    margin-top: 4rem;
+}
+
+.technical-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 70vw;
+}
+
+.technical-skills>h2 {
+    margin-bottom: 4rem;
+}
+
+.technical-skill {
+    border: 2px sold var(--dark-text-color);
+    border-radius: .3rem;
+    padding: .6rem 1.2rem;
+}
+
+  /* personal skills */
+
+  .personal-skills {
+    min-height: 25vh;
+    margin: 4rem 0;
+  }
+
+  .personal-skills>h2 {
+    margin-bottom: 4rem;
+  }
+
+  .personal-skills .personal-skills-container {
+    display: flex;
+    color: var(--dark-text-color);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    & .personal-skill {
+        border: 1px solid var(--dark-text-color);
+        border-radius: 2rem;
+        padding: .6rem 1.2rem;
+    }
+  }
+
+  /* projects */
+
+  .technical-projects {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  }
+
+  .technical-projects>h2 {
+    padding-top: 4rem;
+  }
+
+  .cards-container {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0 8rem;
+  }
+
+  .card {
+    border: 1px solid var(--dark-text-color);
+    height: 16rem;
+    width: 12rem;
+    border-radius: .3rem;
+
+    & .card-top {
+        height: 13rem;
+        background-color: var(--secondary-color);
+        background-color: url('#');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: fit;
+        border-radius: .3rem .3rem 0 0;
+    }
+
+    & .card-bottom {
+        height: 3rem;
+        background-color: var(--tertiary-color);
+        border-radius: 0 0 .3rem .3rem;
+    }
+  }
+
 
   /* achievements */
 
@@ -327,6 +452,71 @@ nav {
     height: 150px;
   }
 
+
+  /* contact */
+
+  .contact-section {
+    background-color: var(--secondary-color);
+    display: grid;
+    place-content: center;
+  }
+
+  .contact-section>h2 {
+    margin-top: 4rem;
+    color: var(--dark-text-color);
+  }
+
+  .form-container {
+    display: flex;
+    gap: 12rem;
+    align-items: center;
+    padding: 4rem 0;
+  }
+
+  .map-container {
+    border: 1px solid black;
+    height: 100%;
+    width: 24rem;
+  }
+
+  .input-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .input-field {
+    border: none;
+    width: 20rem;
+    padding: .8rem 1.6rem;
+    border-radius: .2rem;
+    background-color: var(--);
+  }
+
+  .input-field:focus {
+    outline: 1px solid var(--accent-color);
+  }
+
+
+  #message {
+    resize: none;
+    height: 6rem;
+  }
+
+  button[type="submit"] {
+    background-color: var(--accent-color);
+    border: none;
+    padding: .8rem 1.6rem;
+    border-radius: .2rem;
+    color: var(--light-text-color);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color .25s ease-in-out;
+  }
+
+  button[type="submit"]:hover {
+    background-color: rgba(255, 68, 0, 0.575);
+  }
 
   /* footer */
 
