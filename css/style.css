@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-    font-family: Helvetica, sans-serif;
+  font-family: "Merriweather", serif;
   }
   
 
@@ -36,7 +38,7 @@ nav {
     align-items: center;
     padding: 0 6rem;
     height: var(--nav-height);
-    z-index: 1;
+    z-index: 10;
 }
 
  nav, .nav-link a{
@@ -112,7 +114,17 @@ nav {
 
 .socials a i {
     color: var(--light-text-color);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color: var(--accent-color);
+    }
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
 }
 
 .bottom-text {
