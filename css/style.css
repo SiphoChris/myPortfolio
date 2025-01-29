@@ -71,10 +71,11 @@ nav {
 
 .hero-section {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://cdn.motor1.com/images/mgl/qkl06z/s2/2014-pagani-zonda-760-lm-roadster.webp');
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/images/bg-image.png ');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transform: scaleX(-1);
     margin-top: calc(-1 * var(--nav-height));
     padding: var(--nav-height) 0 0 0;
 }
@@ -83,10 +84,7 @@ nav {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr; 
-    align-items: center; 
-    gap: 3rem; 
-
-
+    align-items: center;
 }
 
 .hero-text {
@@ -143,6 +141,18 @@ nav {
     }
     & i {
         font-size: 1.2rem;
+    }
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+        width: 24rem;
+        border-radius: 50%;
+        border-bottom: 1rem solid var(--accent-color);
     }
 }
 
