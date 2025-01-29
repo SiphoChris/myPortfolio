@@ -112,6 +112,11 @@ nav {
     }
 }
 
+.socials a i {
+    color: var(--light-text-color);
+    font-size: 1.5rem;
+}
+
 .bottom-text {
     & p {
         font-size: 1.1rem;
@@ -159,6 +164,10 @@ nav {
         width: 45ch;
         line-height: 1.6;
     }
+}
+
+[alt="illustration"] {
+    width: 16rem;
 }
 
 
@@ -290,15 +299,18 @@ nav {
 
 /* technical skills */
 
-.technical-skills {
+.technical-skills, .technical-tools {
     min-height: 50vh;
     display: grid;
     place-content: center;
     padding: 4rem 0;
+}
+
+.technical-skills {
     margin-top: 4rem;
 }
 
-.technical-skills-container {
+.technical-skills-container, .technical-tools-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -307,15 +319,19 @@ nav {
     width: 70vw;
 }
 
-.technical-skills>h2 {
+.technical-skills>h2, .technical-tools>h2 {
     margin-bottom: 4rem;
 }
 
-.technical-skill {
+.technical-skill, .technical-tool {
     border: 2px sold var(--dark-text-color);
     border-radius: .3rem;
     padding: .6rem 1.2rem;
 }
+
+/* technical tools */
+
+
 
   /* personal skills */
 
