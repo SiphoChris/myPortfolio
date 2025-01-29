@@ -55,7 +55,7 @@ nav {
 
 .logo {
     color: var(--light-text-color);
-    font-size: 1.5rem;
+    font-size: 1.5rem; 
     font-weight: bold;
     border: 2px solid var(--light-text-color);
     border-radius: 50%;
